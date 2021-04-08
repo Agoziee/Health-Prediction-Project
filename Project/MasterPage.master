@@ -57,7 +57,7 @@
     </style>
     
 </head>
-<body style="background-image:url(images/brown-95272.jpg);">
+<body style="background-image:url(images/med-bgd.jpeg);">
     
     <form id="form1" runat="server">
     
@@ -69,7 +69,7 @@
     
     <tr>
     <td colspan="2">
-        <img src="images/appointment-banner.jpg" width="100%" class="intabular"/>
+        <img src="images/appointment-panel.jpg" width="100%" class="intabular"/>
     </td>
     </tr>
     
@@ -89,7 +89,8 @@
             <li class="toplast"><a href="Logout.aspx" style="line-height:16px;">Logout</a></li>
         </ul>
     </asp:Panel>
-
+    
+    <!--doctor-->
     <asp:Panel ID="Panel2" runat="server">
         <ul id="css3menu1" class="topmenu">
             <input type="checkbox" id="Checkbox1" class="switchbox"><label onclick="" class="switch" for="css3menu-switcher"></label>	
@@ -100,7 +101,8 @@
 	        <li class="toplast"><a href="Logout.aspx" style="line-height:16px;">Logout</a></li>
         </ul>
     </asp:Panel>
-
+    
+    <!--patient-->
     <asp:Panel ID="Panel3" runat="server">
         <ul id="css3menu1" class="topmenu">
             <input type="checkbox" id="Checkbox2" class="switchbox"><label onclick="" class="switch" for="css3menu-switcher"></label>	
@@ -133,8 +135,8 @@
         <td colspan="2"></td>
         </tr>
     <tr>
-    <td colspan="2" style="background-color:Blue; color: #e4c4ab;">
-    Health Prediction 2021
+    <td colspan="2" style="background-color:#0cc35e; color: White;">
+    Health Prediction System Using Naive Bayes Algorithm
     </td>
     </tr>
         </table>

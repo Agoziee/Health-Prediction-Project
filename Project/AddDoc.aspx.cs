@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 public partial class AddDoc : System.Web.UI.Page
 {
-    SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\agoze\Downloads\Smart Health Prediction Naive Bayes algorithm(Agozirim Emeh)\Smart Health Prediction Naive Bayes algorithm\Project\Project\App_Data\Database.mdf';Integrated Security=True");
+    SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\agoze\source\repos\Smart Health Prediction Naive Bayes algorithm(Agozirim Emeh)\Smart Health Prediction Naive Bayes algorithm\Project\Project\App_Data\Database.mdf';Integrated Security=True");
     
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -68,7 +68,7 @@ public partial class AddDoc : System.Web.UI.Page
         if (check() == "OK")
         {
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\agoze\Downloads\Smart Health Prediction Naive Bayes algorithm(Agozirim Emeh)\Smart Health Prediction Naive Bayes algorithm\Project\Project\App_Data\Database.mdf';Integrated Security=True";
+            con.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\agoze\source\repos\Smart Health Prediction Naive Bayes algorithm(Agozirim Emeh)\Smart Health Prediction Naive Bayes algorithm\Project\Project\App_Data\Database.mdf';Integrated Security=True";
             con.Open();
             SqlCommand cmd = new SqlCommand("insert into Doctor(DId,Name,Address,Mobile,Cate,Pass) values (@DId,@Name,@Address,@Mobile,@Cate,@Pass);", con);
             cmd.Parameters.AddWithValue("@DId", TextBox1.Text);
